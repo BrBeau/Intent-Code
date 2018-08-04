@@ -1,0 +1,19 @@
+1.Socket 网络编程： 
+             其实就是主机与主机之间坐数据传输；
+    3要素：
+         	定位主机的IP地址
+         	定位主机的应用程序：port端口
+         	TCP协议
+ 步骤：
+    1.创建Socket；
+       		服务端：ServerSocket：指明程序所占的 Port 端口
+       		客户端： Socket： 指明连接的服务器主机的  IP 地址以及程序的  Port  端口
+    2.服务端： 接收客户端的请求，建立连接，
+    		Server。accept()>>>>指向Socket
+    3.从Socket中获取IO流
+    		getInputStream（）>>>>指向InputStream
+    		getOutputstream()>>>>指向OutputStream
+    4.读写操做
+    		read() or write();
+    5.关闭资源
+    		
